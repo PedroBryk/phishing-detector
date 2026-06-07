@@ -1,0 +1,21 @@
+# Dados (datasets podem ser pesados demais pro GitHub)
+data/
+
+# Ambiente virtual
+venv/
+.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+
+# Modelos treinados (podem ser muito pesados)
+models/*.pkl
+models/*.h5
+models/*.pt
+
+# Sistema
+.DS_Store
+Thumbs.db

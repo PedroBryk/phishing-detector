@@ -19,3 +19,7 @@ models/*.pt
 # Sistema
 .DS_Store
 Thumbs.db
+
+# Modelo DistilBERT (muito pesado para o GitHub)
+models/distilbert_model/
+models/distilbert_tokenizer/

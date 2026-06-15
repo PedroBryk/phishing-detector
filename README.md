@@ -1,7 +1,5 @@
 # Detector de Email de Phishing
 
-Projeto acadêmico de detecção de e-mails de phishing utilizando técnicas de Machine Learning e Deep Learning.
-
 ## Sobre o Projeto
 
 Este projeto treina e compara quatro modelos de inteligência artificial para classificar e-mails como legítimos ou phishing, utilizando um dataset de 82.486 e-mails reais obtido do Kaggle.

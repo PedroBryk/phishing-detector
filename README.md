@@ -1,4 +1,4 @@
-# Phishing Email Detector
+# Detector de Email de Phishing
 
 Projeto acadêmico de detecção de e-mails de phishing utilizando técnicas de Machine Learning e Deep Learning.
 

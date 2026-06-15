@@ -1,5 +1,6 @@
-```markdown
-# Detector de Email de Phishing
+# Phishing Email Detector
+
+Projeto acadêmico de detecção de e-mails de phishing utilizando técnicas de Machine Learning e Deep Learning.
 
 ## Sobre o Projeto
 
@@ -7,10 +8,7 @@ Este projeto treina e compara quatro modelos de inteligência artificial para cl
 
 ## Dataset
 
-Fonte: Kaggle - Phishing Email Dataset
-Link: https://www.kaggle.com/datasets/naserabdullahalam/phishing-email-dataset
-
-O arquivo utilizado é o phishing_email.csv, contendo 82.486 e-mails com duas colunas: text_combined (texto do e-mail) e label (0 = legítimo, 1 = phishing). O dataset é bem balanceado com 52% de phishing e 48% de e-mails legítimos.
+Fonte: Kaggle - Phishing Email Dataset. Link: https://www.kaggle.com/datasets/naserabdullahalam/phishing-email-dataset. O arquivo utilizado é o phishing_email.csv, contendo 82.486 e-mails com duas colunas: text_combined (texto do e-mail) e label (0 = legítimo, 1 = phishing). O dataset é bem balanceado com 52% de phishing e 48% de e-mails legítimos.
 
 ## Modelos Utilizados
 
@@ -22,59 +20,10 @@ CNN (DL Treinado do Zero) - 98.32% de acurácia. Escolhido por sua eficiência n
 
 DistilBERT (DL Pré-treinado) - 97.95% de acurácia. Escolhido por ser um modelo pré-treinado em bilhões de textos, 40% menor e 60% mais rápido que o BERT original, mantendo 97% da performance. Referência: Uddin & Sarker (2024) - An Explainable Transformer-based Model for Phishing Email Detection. https://arxiv.org/abs/2402.13871
 
-## Estrutura do Projeto
-
-```
-phishing-detector/
-├── data/                    # Dataset (não versionado)
-├── notebooks/
-│   ├── 01_exploracao.ipynb  # Exploração e limpeza dos dados
-│   ├── 02_random_forest.ipynb
-│   ├── 03_lstm.ipynb
-│   ├── 04_cnn.ipynb
-│   └── 05_bert.ipynb
-├── models/                  # Modelos treinados (não versionados)
-├── src/
-├── reports/
-├── app.py                   # Interface Streamlit
-├── requirements.txt
-└── README.md
-```
-
 ## Como Executar
 
-1. Clonar o repositório
-```
-git clone https://github.com/PedroBryk/phishing-detector.git
-cd phishing-detector
-```
-
-2. Criar e ativar o ambiente virtual
-```
-python -m venv venv
-venv\Scripts\activate
-```
-
-3. Instalar as dependências
-```
-pip install -r requirements.txt
-pip install torch
-```
-
-4. Baixar o dataset
-
-Acesse https://www.kaggle.com/datasets/naserabdullahalam/phishing-email-dataset, baixe o arquivo phishing_email.csv e coloque na pasta data/.
-
-5. Rodar os notebooks em ordem
-
-Abra o Jupyter e execute os notebooks de 01 a 05 na pasta notebooks/ para treinar os modelos.
-
-6. Rodar a interface
-```
-streamlit run app.py
-```
+Clone o repositório com `git clone https://github.com/PedroBryk/phishing-detector.git` e entre na pasta com `cd phishing-detector`. Crie e ative o ambiente virtual com `python -m venv venv` e `venv\Scripts\activate`. Instale as dependências com `pip install -r requirements.txt` e `pip install torch`. Baixe o dataset em https://www.kaggle.com/datasets/naserabdullahalam/phishing-email-dataset, coloque o arquivo phishing_email.csv na pasta data/ e execute os notebooks de 01 a 05 em ordem no Jupyter para treinar os modelos. Por fim, rode a interface com `streamlit run app.py`.
 
 ## Equipe
 
 Pedro, Alana, Matheus e Kaka
-```

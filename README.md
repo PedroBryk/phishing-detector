@@ -24,4 +24,4 @@ Clone o repositório com `git clone https://github.com/PedroBryk/phishing-detect
 
 ## Equipe
 
-Pedro, Alana, Matheus e Kaka
+Pedro Bryk, Alana Chorobura, Matheus Gomes e Kariane Neves
